@@ -116,11 +116,7 @@ variable "cluster_version" {
 }
 
 variable "encryption_config" {
-  type = list(object({
-    enable_key_rotation     = bool
-    deletion_window_in_days = number
-    key_alias               = string
-  }))
+  type = map
 }
 
 variable "instance_type" {
