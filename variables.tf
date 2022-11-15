@@ -122,3 +122,7 @@ variable "encryption_config" {
     key_alias               = string
   }))
 }
+
+variable "instance_type" {
+  type = string
+}
