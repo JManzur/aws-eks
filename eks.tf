@@ -44,10 +44,10 @@ resource "aws_eks_node_group" "node_groups" {
     min_size     = each.value.min
   }
 
-  remote_access {
-    ec2_ssh_key               = var.eks_nodes_key
-    source_security_group_ids = []
-  }
+  # remote_access {
+  #   ec2_ssh_key               = var.eks_nodes_key
+  #   source_security_group_ids = []
+  # }
 }
 
 
