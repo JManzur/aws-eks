@@ -120,5 +120,5 @@ variable "encryption_config" {
 }
 
 variable "instance_type" {
-  type = string
+  type = list
 }
